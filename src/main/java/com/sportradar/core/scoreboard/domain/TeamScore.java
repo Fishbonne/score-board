@@ -1,4 +1,7 @@
 package com.sportradar.core.scoreboard.domain;
 
-public record TeamScore(String teamName, int score) {
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.PositiveOrZero;
+
+public record TeamScore(@NotBlank String teamName, @PositiveOrZero int score) {
 }
