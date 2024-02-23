@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.sportradar</groupId>
     <artifactId>score-board</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>score-board</name>
     <description>score-board</description>
     <properties>
