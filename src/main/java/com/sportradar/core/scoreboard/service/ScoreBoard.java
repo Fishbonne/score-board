@@ -16,7 +16,7 @@ public interface ScoreBoard {
      * @param matchDetails contains home and away team names {@link MatchDetails}
      * @throws ConstraintViolationException if <CODE><I>matchDetails</I></CODE> is invalid
      * @throws com.sportradar.core.scoreboard.exception.MatchAlreadyStartedException
-     * if match for particular teams has been starter already
+     * if match for particular teams has been started already
      */
     void startNewScore(@Valid MatchDetails matchDetails);
 
