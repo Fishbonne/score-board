@@ -1,6 +1,9 @@
 package com.sportradar.core.scoreboard.domain;
 
-public record MatchScore(TeamScore homeScore, TeamScore awayScore, Long startTime) {
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotNull;
+
+public record MatchScore(@NotNull @Valid TeamScore homeScore, @NotNull @Valid TeamScore awayScore, Long startTime) {
 
     public int totalScore() {
         return homeScore().score() + awayScore().score();
